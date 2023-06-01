@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "Social_Media_Platform_backend": {
+      "main": "src/Social_Media_Platform_backend/main.mo",
+      "type": "motoko"
+    },
+    "Social_Media_Platform_frontend": {
+      "dependencies": [
+        "Social_Media_Platform_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/Social_Media_Platform_frontend/src/index.html"
+      },
+      "source": [
+        "src/Social_Media_Platform_frontend/assets",
+        "dist/Social_Media_Platform_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

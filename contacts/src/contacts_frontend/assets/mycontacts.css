@@ -1,0 +1,39 @@
+html {
+    background-color: bisque
+}
+
+body {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #00008b;
+    font-size: 32px
+}
+
+div.new-entry {
+    margin: 30px 20px
+}
+
+.new-entry>div {
+    margin-bottom: 15px
+}
+
+table {
+    border-bottom: 1px solid #00008b;
+    border-top: 1px solid #00008b;
+    margin-top: 12px
+}
+
+#form {
+    margin: 30px 0 30px 20px
+}
+
+button {
+    line-height: 20px
+}
+
+#lookupName {
+    margin-right: 12px
+}

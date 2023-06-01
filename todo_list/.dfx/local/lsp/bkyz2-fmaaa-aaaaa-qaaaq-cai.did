@@ -1,0 +1,9 @@
+type Todo = 
+ record {
+   done: bool;
+   value: text;
+ };
+service : {
+  getArrayData: () -> (vec Todo);
+  storeArray: (vec Todo) -> (vec Todo);
+}

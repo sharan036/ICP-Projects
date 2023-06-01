@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "buy_coffee_backend": {
+      "main": "src/buy_coffee_backend/main.mo",
+      "type": "motoko"
+    },
+    "buy_coffee_frontend": {
+      "dependencies": [
+        "buy_coffee_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/buy_coffee_frontend/src/index.html"
+      },
+      "source": [
+        "src/buy_coffee_frontend/assets",
+        "dist/buy_coffee_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

@@ -1,0 +1,10 @@
+type Todo = 
+ record {
+   done: bool;
+   index: nat;
+   value: text;
+ };
+service : {
+  getArrayData: () -> (vec Todo);
+  updateObject: (nat, bool) -> (vec Todo);
+}

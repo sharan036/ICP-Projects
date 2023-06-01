@@ -1,0 +1,49 @@
+{
+  "canisters": {
+    "reactApp_backend": {
+      "main": "src/reactApp_backend/main.mo",
+      "type": "motoko"
+    },
+    "reactApp_frontend": {
+      "dependencies": [
+        "reactApp_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/reactApp_frontend/src/index.html"
+      },
+      "source": [
+        "src/reactApp_frontend/assets",
+        "dist/reactApp_frontend/"
+      ],
+      "type": "assets"
+    },
+    "nft": {
+      "package": "nft",
+      "candid": "nft.did",
+      "type": "rust",
+      "declarations": {
+        "node_compatibility": true
+      }
+    },
+    "assets": {
+      "type": "assets",
+      "source": ["dist"],
+      "declarations": {
+        "node_compatibility": true
+      }
+    },
+    "cap-router": {
+      "type": "custom",
+      "wasm": "cap/wasm/cap_router.wasm",
+      "candid": "cap/candid/router.did"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

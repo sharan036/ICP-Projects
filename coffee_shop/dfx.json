@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "coffee_shop_backend": {
+      "main": "src/coffee_shop_backend/main.mo",
+      "type": "motoko"
+    },
+    "coffee_shop_frontend": {
+      "dependencies": [
+        "coffee_shop_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/coffee_shop_frontend/src/index.html"
+      },
+      "source": [
+        "src/coffee_shop_frontend/assets",
+        "dist/coffee_shop_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
